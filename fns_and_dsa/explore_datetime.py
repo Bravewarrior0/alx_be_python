@@ -1,11 +1,11 @@
-import datetime
+from datetime import timedelta, datetime
 
 def display_current_datetime():
-    current_time = datetime.datetime.now()
+    current_time = datetime.now()
     print(f"Current date and time: {current_time.strftime("%Y-%m-%d %H:%M:%S")}")
 
 def calculate_future_date(days_to_add):
-    future_date = datetime.datetime.now() + datetime.timedelta(days=days_to_add)
+    future_date = datetime.now() + timedelta(days=days_to_add)
     print(f"Future date: {future_date.strftime("%Y-%m-%d")}")
 
 
